@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.main{
+    .text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 50px;
+        gap: 5px;
+        span{
+            color: #1b745e;
+            font-size: 13px;
+        }
+        p{
+            color: #1b745e;
+            font-size: 40px;
+            font-family: 'Quicksand', sans-serif;
+        }
+    }
+}    
+@media screen and (min-width: 300px) and (max-width: 576px) {
+    .main{
+        .text{
+            span{
+                font-size: 13px;
+            }
+            p{
+
+                font-size: 30px;
+            }
+        }
+    }
+}    

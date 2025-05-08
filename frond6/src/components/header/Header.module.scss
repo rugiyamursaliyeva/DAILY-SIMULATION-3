@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10634ef0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 40px;
+    .logo{
+        font-family: 'Quicksand', sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .navs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        a{
+            text-decoration: none;
+            font-family: 'Quicksand', sans-serif;
+            font-size: 14px;
+            color: white;
+            &:hover{
+                color: #ffc107;
+                transition: all 0.4s;
+                border-bottom: 2px solid #ffc107;
+            }
+        }
+    }
+    .bars{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+   .header{
+    .navs{
+        a{
+            display: none;
+        }
+    }
+    .bars {
+    display: block;
+    color: #123b31;
+    padding: 5px;
+    margin-left: 100px;
+    font-size: 35px;
+  }
+   }
+}
