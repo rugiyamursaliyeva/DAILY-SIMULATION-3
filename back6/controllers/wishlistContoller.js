@@ -14,7 +14,7 @@ const postwishlist = async (req, res) => {
 
 const deletewishlist = async (req, res) => {
     const {id} = req.params
-    await WishlistModel.findByIdDelete(id)
+    await WishlistModel.findByIdAndDelete(id)
     res.json(`${id} -li wishlist silindi`)
 }
 

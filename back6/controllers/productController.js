@@ -14,7 +14,7 @@ const postProduct = async (req, res) => {
 
 const deleteProduct = async (req, res) => {
     const {id} = req.params
-    await ProductModel.findByIdDelete(id)
+    await ProductModel.findByIdAndDelete(id)
     res.json(`${id} -li product silindi`)
 }
 

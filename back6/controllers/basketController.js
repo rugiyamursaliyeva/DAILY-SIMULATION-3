@@ -14,7 +14,7 @@ const postBasket = async (req, res) => {
 
 const deleteBasket = async (req, res) => {
     const {id} = req.params
-    await BasketModel.findByIdDelete(id)
+    await BasketModel.findByIdAndDelete(id)
     res.json(`${id} -li basket silindi`)
 }
 

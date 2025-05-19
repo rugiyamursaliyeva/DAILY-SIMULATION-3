@@ -4,6 +4,8 @@ import Layout from '../components/Layout'
 import NotFound from '../components/NotFound'
 import Home from '../pages/home/Home'
 import Admin from '../pages/admin/Admin'
+import Basket from '../pages/basket/Basket'
+import Wishlist from '../pages/wishlist/Wishlist'
 
 const Router = () => {
   return (
@@ -11,9 +13,12 @@ const Router = () => {
         <Routes>
             <Route element={<Layout/>}>
                 <Route path='/' element={<Home/>}/>
+                <Route path='/admin' element={<Admin/>}/>
+                <Route path='/basket' element={<Basket/>}/>
+                <Route path='/wishlist' element={<Wishlist/>}/>
             </Route>
             <Route path='*' element={<NotFound/>}/>
-            <Route path='/admin' element={<Admin/>}/>
+            
         </Routes>
     </BrowserRouter>
   )

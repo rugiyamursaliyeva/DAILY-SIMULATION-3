@@ -15,7 +15,7 @@ export const postWishlistsThunk = createAsyncThunk('/product/post', async (data)
 
 //DELETE
 export const deleteWishlistsThunk = createAsyncThunk('/product/delete', async (id) => {
-    await axios.delete(`http://localhost:5000/wishlist${id}`, id)
+    await axios.delete(`http://localhost:5000/wishlist/${id}`, id)
     return id
 })
 

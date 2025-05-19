@@ -46,9 +46,29 @@
                 }
             }
             .cardText{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
                 text-align: center;
                 font-family: 'Quicksand', sans-serif;
                 color: #1b745e;
+                .btn{
+                    display: flex;
+                    gap: 10px;
+                    button{
+                        width: 100px;
+                        height: 30px;
+                        border: none;
+                        color: white;
+                        background-color: #1b745e;
+                        &:hover{
+                            background-color: white;
+                            color: #1b745e;
+                            transition: all 0.4s;
+                        }
+
+                    }
+                }
             }
         }
     }
